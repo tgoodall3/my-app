@@ -102,10 +102,11 @@ a:hover{
         height: 70px;
     }
     .myName{
+        margin-top: 5px ;
         font-size: 1rem;
     }
     .line{
-        font-size: 40px;
+        font-size: 50px;
     }
     .links{
         width: 40%;
@@ -117,10 +118,11 @@ a:hover{
     height: 60px;
   }
     .myName{
+        margin-top: 5px;
         font-size: 0.8rem;
     }
     .line{
-        font-size: 30px;
+        font-size: 50px;
     }
     .links{
         width: 50%;
