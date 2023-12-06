@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
-/* Add more reset styles as needed */
 
-/* END: CSS Reset */
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+

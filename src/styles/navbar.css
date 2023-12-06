@@ -6,6 +6,24 @@
     font-style: normal;
   }
 
+
+  .hamburger {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px; 
+    width: 30px; 
+}
+
+.hamburger span {
+    display: block;
+    height: 3px; 
+    width: 100%; 
+    background-color: white; 
+    transition: all 0.3s ease; 
+}
+
+
 .Nav-Container{
     display: flex;
     justify-content: space-between;
@@ -23,14 +41,59 @@
 
 }
 
-/* @keyframes fadeIn {
+.Hlinks {
+    display: flex;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    margin-top: 150px;
+    width: 100%;
+    animation: fadeIn .4s ease-in forwards; 
+}
+
+
+
+.Hlinks a {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: roboto;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Hlinks.open {
+    transform: translateY(0);
+    animation: fadeOut .4s ease-in forwards; 
+
+}
+
+.Hlinks.closed {
+    transform: translateY(-100%);
+
+}
+
+@keyframes fadeOut {
     from {
-      background-color: black;
+        opacity: .9;
     }
     to {
-      background-color: white;
+        opacity: 0;
     }
-  } */
+  }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+  }
 
 .Logo{
    display: flex;
@@ -51,6 +114,7 @@
     cursor: pointer;
     font-family: roboto;
 }
+
 
 .Logo img:hover{
     filter: invert(0.5);
@@ -111,6 +175,10 @@ a:hover{
     .links{
         width: 40%;
     }
+
+    .Hlinks{
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -127,5 +195,19 @@ a:hover{
     .links{
         width: 50%;
         display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hamburger {
+        display: flex; 
+    }
+    .Hlinks {
+        display: block; 
+        position: absolute; 
+        top: 100%; 
+        right: 0;
+        background-color: black;
     }
 }

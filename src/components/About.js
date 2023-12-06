@@ -10,7 +10,7 @@ function About() {
             <br></br>
             <br></br>
 
-            I have great knowledge in HTML, CSS, SCSS, Javascript, Java, React and more. I love Developing all kind of applications
+            I have great knowledge in HTML, CSS, SCSS, Javascript, Java, React, and more. I love Developing all kind of applications
             and know I can help you create your next project.</p>
         </div>
     </section>
