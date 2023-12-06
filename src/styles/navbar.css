@@ -124,5 +124,6 @@ a:hover{
     }
     .links{
         width: 50%;
+        display: none;
     }
 }
