@@ -1,0 +1,54 @@
+.abouContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.aboutHead{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 0.5rem rgba(150, 0, 700, 5);
+    font-family: roboto;
+}
+
+.aboutText{
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* color: #fff; */
+    margin-bottom: 1rem;
+    font-family: roboto;
+
+}
+
+@media (max-width: 768px) {
+    .aboutHead{
+        font-size: 2rem;
+    }
+    .aboutText{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutHead{
+        font-size: 1.5rem;
+    }
+    .aboutText{
+        font-size: 0.8rem;
+    }
+  }

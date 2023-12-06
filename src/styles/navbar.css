@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../assets/fonts/Roboto/RobotoSlab-Regular.ttf') format('woff2'),
+         url('../assets/fonts/Roboto/RobotoSlab-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.Nav-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(100, 0, 700, .2);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    opacity: 0.9;
+    /* animation: fadeIn 3s ease-in forwards; Adjust '2s' to control the duration */
+
+}
+
+/* @keyframes fadeIn {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: white;
+    }
+  } */
+
+.Logo{
+   display: flex;
+   margin-top: 15px;
+   height: 80px;
+   width: 80px;
+   filter: invert();
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: roboto;
+}
+
+.Logo img:hover{
+    filter: invert(0.5);
+}
+
+a:hover{
+    color: rgb(150, 0, 700);
+}
+
+.NavName{
+    display: flex;
+    flex-direction: row;
+}
+
+.left:hover{
+    color: black;
+}
+
+.right:hover{
+    color: black;
+}
+
+.line{
+    height: 10px;
+    font-size: 60px;
+    font-weight: 50;
+    background-color: white;
+    margin-top: -25px;
+    padding: 8px;
+    /* animation: fadeIn 3s ease-in forwards; Adjust '2s' to control the duration */
+}
+
+.myName{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    /* text-shadow: 0 0 0.5rem rgba(0, 90, 0, 5); */
+    /* -webkit-text-stroke: red .2px; */
+    color: lawngreen;
+    font-family: roboto;
+}
+
+@media (max-width: 768px) {
+
+    .Logo{
+        height: 70px;
+    }
+    .myName{
+        font-size: 1rem;
+    }
+    .line{
+        font-size: 40px;
+    }
+    .links{
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+  .Logo{
+    height: 60px;
+  }
+    .myName{
+        font-size: 0.8rem;
+    }
+    .line{
+        font-size: 30px;
+    }
+    .links{
+        width: 50%;
+    }
+}
