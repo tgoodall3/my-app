@@ -31,22 +31,25 @@ h1{
 }
 
 .one {
-    background-image: url('../assets//images/card-ex.jpg');
+    background-image: url('../assets//images/MVN.png');
     background-size: cover;  /* or other sizing options */
+    background-position: center;
     background-repeat: no-repeat;
     filter: blur(2px);
 
 }
 .two {
-    background-image: url('../assets//images/card-ex.jpg');
+    background-image: url('../assets//images/empire.png');
     background-size: cover;  /* or other sizing options */
+    background-position: top;
     background-repeat: no-repeat;
     filter: blur(2px);
 
 }
 .three {
-    background-image: url('../assets//images/card-ex.jpg');
+    background-image: url('../assets//images/crud.png');
     background-size: cover;  /* or other sizing options */
+    background-position: top;
     background-repeat: no-repeat;
     filter: blur(2px);
 
