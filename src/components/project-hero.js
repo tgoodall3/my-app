@@ -6,7 +6,7 @@ function ProjectHero() {
   return (
     <div className='ProjectHero'>
         <h1 className='Head'>Dig into my work</h1>
-        <div className="projects">
+        <div className="projects" data-aos="fade-right">
         <Card className="one" text="Description for Project 1"/>
   <Card className="two" text="Description for Project 2"/>
   <Card className="three"text="Description for Project 3"/>
