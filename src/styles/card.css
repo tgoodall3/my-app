@@ -44,7 +44,7 @@
     text-align: center;
     z-index: 2s;
     position: absolute;
-    top: 30%;
+    top: 40%;
     padding: 20px;
     opacity: 0;
 }
@@ -87,10 +87,20 @@
   }
   
   @media screen and (max-width: 580px) {
+
     
-    .CardText{
-        font-size: 2rem;
-        margin-top: -40px;
+    
+   .Card .CardText{
+        font-size: 1rem;
+        margin-top: -30px;
+        opacity: 1;
     }
 
+    .CardImage{
+      filter: blur(3px);
+      opacity: 0.5;
+      transition: all 0.2s ease-in-out;
+
     }
+
+  }
