@@ -10,6 +10,10 @@ import { useState } from 'react';
 
 function Navbar() {
 
+  const navigateHome = () => {
+    window.location.href = '/';
+  };
+
   const [isOpen, setIsOpen] = useState(false);
     
     const toggleMenu = () => {
@@ -18,8 +22,8 @@ function Navbar() {
 
   return (
     <div className="Nav-Container" >
-        <div className="Logo" data-aos="fade-down">
-            <img src={logo} alt="Logo" />
+       <div className="Logo" data-aos="fade-down">
+            <img onClick={navigateHome} src={logo} alt="Logo" /> 
             <div className='NavName'>
             <span className='line'>|</span> 
             <span className='myName'><span className='left'>Tyler</span> <span className='right'>Goodall</span></span>
