@@ -1,16 +1,24 @@
 import './App.css';
-import About from './components/About';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Footer from './components/footer';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './components/routes/contact';
 import Project from './components/routes/project';
 import Home from './components/routes/home';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true, // specifies whether animation should happen only once - while scrolling down
+    });
+    // This function runs when the component is unmounted
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
   return (
     <div className="App">
         <Routes>

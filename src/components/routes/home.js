@@ -9,11 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000, // values from 0 to 3000, with step 50ms
-    });
-  }, []);
+
   return (
     <div className="Home" >
   <Navbar />

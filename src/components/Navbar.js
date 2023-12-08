@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <div className="Nav-Container" >
-        <div className="Logo" data-aos="fade-in">
+        <div className="Logo" data-aos="fade-down">
             <img src={logo} alt="Logo" />
             <div className='NavName'>
             <span className='line'>|</span> 

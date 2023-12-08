@@ -63,7 +63,7 @@
     width: 400px; /* Use width to maintain aspect ratio */
     filter: drop-shadow(0 0 0.75rem rgba(150, 0, 700, 0.5));
     opacity: 95%;
-    margin-bottom: -100px;
+    margin-bottom: -180px;
 }
 
 /* Responsive styles */

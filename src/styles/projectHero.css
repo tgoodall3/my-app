@@ -24,33 +24,22 @@ h1{
     text-align: center;
 }
 
-.one:hover, .two:hover, .three:hover{
+/* .one:hover, .two:hover, .three:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(150,0,750,.4);
-    filter: blur(0px);
-}
-
-.one {
-    background-image: url('../assets//images/MVN.png');
-    background-size: cover;  /* or other sizing options */
-    background-position: center;
-    background-repeat: no-repeat;
     filter: blur(2px);
+} */
 
-}
-.two {
-    background-image: url('../assets//images/empire.png');
-    background-size: cover;  /* or other sizing options */
-    background-position: top;
-    background-repeat: no-repeat;
-    filter: blur(2px);
 
-}
-.three {
-    background-image: url('../assets//images/crud.png');
-    background-size: cover;  /* or other sizing options */
-    background-position: top;
-    background-repeat: no-repeat;
-    filter: blur(2px);
+.Card:hover .CardText {
+    opacity: 1; /* Make text fully visible on hover */
+  }
 
-}
+
+  
+  @media screen and (max-width: 580px) {
+    }
+    h1{
+        font-size: 2rem;
+        margin-top: 4em;
+    }
