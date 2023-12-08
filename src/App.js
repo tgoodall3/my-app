@@ -9,6 +9,20 @@ import { useEffect } from 'react';
 
 
 function App() {
+
+  useEffect(() => {
+    // This will run when the component mounts
+    const handleBeforeUnload = () => {
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -19,6 +33,11 @@ function App() {
       AOS.refresh();
     };
   }, []);
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <div className="App">
         <Routes>
