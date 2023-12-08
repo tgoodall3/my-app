@@ -74,3 +74,23 @@
     }
 
   }
+
+  .Card:hover .CardText {
+    opacity: 1; /* Make text fully visible on hover */
+  }
+
+  @media screen and (max-width: 842px) {
+    .Card{
+        height: 350px;
+        height: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    
+    .CardText{
+        font-size: 2rem;
+        margin-top: -40px;
+    }
+
+    }

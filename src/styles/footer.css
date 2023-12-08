@@ -1,5 +1,5 @@
 .portfolio-footer{
-    background-color: #000;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0),  rgb(0, 0, 0),  rgb(120, 0, 900));
     color: #fff;
     padding: 20px;
     text-align: center;
