@@ -8,20 +8,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 
+
 function App() {
-
-  useEffect(() => {
-    // This will run when the component mounts
-    const handleBeforeUnload = () => {
-      window.scrollTo(0, 0);
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
 
   useEffect(() => {
     AOS.init({
