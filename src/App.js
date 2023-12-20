@@ -6,6 +6,11 @@ import Home from './components/routes/home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
 
 
 
@@ -22,19 +27,41 @@ function App() {
     };
   }, []);
 
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
+  // window.onbeforeunload = function () {
+  //   window.scrollTo(0, 0);
+  // };
+
+  useEffect(() => {
+    
+    // Registering the 'begin' event and logging it to the console when triggered.
+    Events.scrollEvent.register('begin', (to, element) => {
+      console.log('begin', to, element);
+    });
+
+    // Registering the 'end' event and logging it to the console when triggered.
+    Events.scrollEvent.register('end', (to, element) => {
+      console.log('end', to, element);
+    });
+  }, []);
   
   return (
     <div className="App">
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="Home" >
+        <Navbar />
+        <Element name="home-section" id="home-section" className='element'>
+          <Hero />
+        </Element>
+        <Element name="about-section" id="about-section"  className='element'>
+          <About />
+        </Element>
+        <Element name="project-section" id="project-section"  className='element'>
+          <Project />
+        </Element>
+        <Element name="contact-section" id="contact-section"  className='element'>
+          <Contact />
+        </Element>
+      </div>
     </div>
-
   );
 }
 

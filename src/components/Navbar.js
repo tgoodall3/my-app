@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '../assets/images/logo.png'; // Assuming logo.png is in src/assets
 import '../styles/navbar.css';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link } from "react-scroll";import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
@@ -38,15 +38,34 @@ function Navbar() {
 
        {isOpen && (
         <div className="Hlinks ${isOpen ? 'open' : 'closed'}">
-        <Link to="/">Home</Link>
-        <Link to="/project">Projects</Link>
-        <Link to="/contact">Contact</Link>        </div>
+          <Link activeClass="active" to="home-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Home
+      </Link>
+      <Link activeClass="active" to="about-section" spy={true} smooth={true} offset={-70} duration={500}>
+        About
+      </Link>
+      <Link activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Projects
+      </Link>
+      <Link activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Contact
+      </Link>
+            </div>
        )}
 
         <div className='links'>
-        <Link to="/">Home</Link>
-        <Link to="/project">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link activeClass="active" to="home-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Home
+      </Link>
+      <Link activeClass="active" to="about-section" spy={true} smooth={true} offset={-70} duration={500}>
+        About
+      </Link>
+      <Link activeClass="active" to="project-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Projects
+      </Link>
+      <Link activeClass="active" to="contact-section" spy={true} smooth={true} offset={-70} duration={500}>
+        Contact
+      </Link>
         </div>
     </div>
   );

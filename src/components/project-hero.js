@@ -15,10 +15,10 @@ function ProjectHero() {
     <div className='ProjectHero'>
         <h1 className='Head'>Dig into my work</h1>
         <div className="projects">
-        <a href='https://precision-paint-tgoodall3.vercel.app/'><Card className="four" text="My Latest UNFINISHED work for a local contractor." image={Precision}/></a>
-         <a href='https://movienite.vercel.app/'><Card on className="one" text="A React website using the TDMB Movie API." image={MVN} /></a>
-         <a href='https://tgoodall3.github.io/career-planning---ecom-portfolio/'><Card className="two" text="A front-end design of a Ecommerce brand called Empire Fitness." image={empire}/></a>
-         <a href='https://final-todo-nu.vercel.app/'><Card className="three"text="A   React/Firebase CRUD Todo List." image={crud}/></a>
+        <a href='https://precision-paint-tgoodall3.vercel.app/'><Card className="four" text="Created using Html, CSS, JS, and React" image={Precision}/></a>
+         <a href='https://movienite.vercel.app/'><Card on className="one" text="A React website using Html, CSS, JS and the TDMB Movie API." image={MVN} /></a>
+         <a href='https://tgoodall3.github.io/career-planning---ecom-portfolio/'><Card className="two" text="A one page design of a Ecommerce website using Html and CSS" image={empire}/></a>
+         {/* <a href='https://final-todo-nu.vercel.app/'><Card className="three"text="A   React/Firebase CRUD Todo List." image={crud}/></a> */}
       </div>
     </div>
   );

@@ -7,9 +7,9 @@ import '../../styles/contact.css';
 function Contact() {
   return (
     <div className='Contact'>
-      <Navbar />
+      {/* <Navbar /> */}
       <Form />
-      <br></br>
+      {/* <br></br> */}
       <Footer />
     </div>
   );

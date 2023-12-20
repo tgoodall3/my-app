@@ -160,6 +160,12 @@ a:hover{
     font-family: roboto;
 }
 
+@media screen and (min-width: 768px) {
+    .Hlinks{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
 
     .Logo{
@@ -174,6 +180,7 @@ a:hover{
     }
     .links{
         width: 40%;
+        font-size: 0.8rem;
     }
 
     .Hlinks{
@@ -206,8 +213,13 @@ a:hover{
     .Hlinks {
         display: block; 
         position: absolute; 
-        top: 100%; 
+        top: 110%; 
         right: 0;
+        font-size: .8rem;
         background-color: black;
+    }
+    
+    .Hlinks a {
+       font-size: .8rem;
     }
 }

@@ -7,9 +7,9 @@ import Footer from '../footer';
 function Project() {
   return (
   <div className="Project">
-  <Navbar />    
+  {/* <Navbar />     */}
   <ProjectHero />
-  <Footer />
+  {/* <Footer /> */}
 </div>
    ) ;
 }
