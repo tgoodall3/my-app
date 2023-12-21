@@ -5,11 +5,14 @@ import emailjs from 'emailjs-com';
 
 function Form() {
 
+  const [successMessage, SetSuccessMesssage] = React.useState('');
+
   const {register, handleSubmit, formState: errors } = useForm();
   const onSubmit = (data, e) => {
     console.log(data);
     emailjs.sendForm('service_bhwkbq6', 'template_m47j07h', e.target, 'hhnZJafdr_Rqdg3tK')
     .then((result) => {
+        SetSuccessMesssage("Message Sent Successfully, I'll get back to you as soon as possible")
         console.log(result.text);
     }, (error) => {
         console.log(error.text);
@@ -34,6 +37,7 @@ function Form() {
         </label>
         {errors.message && 'A message is required'}
         <input className="submit" type="submit" value="Submit" />
+        {successMessage && <p className="success-message">{successMessage}</p>}
       </form>
     </div>
   );
