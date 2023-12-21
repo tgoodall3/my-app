@@ -8,6 +8,7 @@ import Precision from '../assets/images/precision.png';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import HB from '../assets/images/HB.png';
 
 
 function ProjectHero() {  
@@ -18,6 +19,8 @@ function ProjectHero() {
         <a href='https://precision-paint-tgoodall3.vercel.app/'><Card className="four" text="Created using Html, CSS, JS, and React" image={Precision}/></a>
          <a href='https://movienite.vercel.app/'><Card on className="one" text="A React website using Html, CSS, JS and the TDMB Movie API." image={MVN} /></a>
          <a href='https://tgoodall3.github.io/career-planning---ecom-portfolio/'><Card className="two" text="A one page design of a Ecommerce website using Html and CSS" image={empire}/></a>
+         <a href='https://tgoodall3.github.io/career-planning---ecom-portfolio/'><Card className="three" text="(UNFINISHED) A ecommerce site using Html, CSS, JS, Material UI, and React" image={HB}/></a>
+
          {/* <a href='https://final-todo-nu.vercel.app/'><Card className="three"text="A   React/Firebase CRUD Todo List." image={crud}/></a> */}
       </div>
     </div>
