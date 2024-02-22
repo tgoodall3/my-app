@@ -14,7 +14,7 @@ function Hero() {
       <img className="avatar" src={avatar} alt="Avatar" data-aos="fade-right"/>
     <h1 className='head' data-aos="fade-left">Hello, I'm <span className='name'>Tyler</span>
     <br></br> 
-    <span className='sub'>Web Designer/Developer</span>
+    <span className='sub'>Web Developer</span>
 
     </h1>
     </div>
