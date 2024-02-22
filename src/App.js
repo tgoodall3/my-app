@@ -51,11 +51,11 @@ function App() {
         <Element name="home-section" id="home-section" className='element'>
           <Hero />
         </Element>
-        <Element name="about-section" id="about-section"  className='element'>
-          <About />
-        </Element>
         <Element name="project-section" id="project-section"  className='element'>
           <Project />
+        </Element>
+        <Element name="about-section" id="about-section"  className='element'>
+          <About />
         </Element>
         <Element name="contact-section" id="contact-section"  className='element'>
           <Contact />
